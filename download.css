@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    background: #B8FFF9;
+}
+.upload {
+    width: 500px;
+    background:#56BBF1 ;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 8px 8px 20px #56BBF1 ,
+    8px 8px 80px #56BBF1 ;
+}
+header p {
+    font-size: 17px;
+    margin: 10px;
+}
+form {
+    margin: 20px 0 20px ;
+}
+form input {
+    width: 100%;
+    height: 60px;
+    padding-left: 10px;
+    border: solid 2px #F7ECDE;
+    border-radius: 5px;
+}
+form button {
+    width: 514px;
+    border: none;
+    color: #000;
+    background: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    margin-top: 30px;
+    padding: 15px;
+    cursor: pointer;
+    pointer-events: none;
+    box-shadow: 7px 7px 30px #0F3460;
+}
+form input:valid ~ button {
+    opacity: 1;
+    pointer-events: auto;
+}
+form button:hover {
+    content: "";
+    animation: form 4s ease-in infinite;
+}
+header h1 {
+    margin-top: 20px;
+}
+a {
+    font-size: 30px;
+    text-decoration: none;
+    margin: 30px;   
+}
+.icon {
+    animation: 2s rotate ease-in-out infinite;
+}
+.fa-linkedin {
+    color: #0F3460;
+    box-shadow: 0px 0px 10px #DDDDDD;
+    border-radius: 10px;
+}
+.fa-github {
+    color: #000;
+    box-shadow: 0px 0px 10px #DDDDDD;
+    border-radius: 10px;
+}
+.fa-reddit {
+    color: #FF4C29;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #DDDDDD;
+}
+.fa-twitter {
+    color: #150050;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #DDDDDD;
+}
+.fa-telegram {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #DDDDDD;
+}
+@keyframes rotate {
+    0% {
+        transform: scaleW(-2);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    75% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleW(2);
+    }
+}
+@keyframes form {
+    0% {
+        transform: translate(0%);
+    }
+    50% {
+        transform: translate(10%)
+    }
+    75%{
+        transform: translate(-10%);
+    }
+    100% {
+        transform: translate(0%)
+
+    }
+}
